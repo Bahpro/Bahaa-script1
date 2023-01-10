@@ -7,7 +7,7 @@ int Eng()
 string s;
     int i = 0;
     int y = 0;
-    cout<<"enter your text\n";
+    cout<<"enter your text: \n";
     getline (cin, s);
 
     for (s= s ; s[i] != '\0';)
@@ -28,7 +28,7 @@ int Arbc()
     int i = 0;
     int y = 0;
     string s;
-    cout<<"enter your text\n";
+    cout<<"enter your text: \n";
     getline (cin, s);
     for (s= s ; s[i] != '\0';)
     {
