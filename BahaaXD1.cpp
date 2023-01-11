@@ -81,7 +81,7 @@ int main()
     string a;
     string w;
 
-    cout<<"\nEnter C:Character if you want to count characters \n"<<endl;
+    cout<<"\nEnter C:Character if you want to count the number of characters \n"<<endl;
     cout<<"Enter W:Word if you want to count the number of words \n"<<endl;
     getline(cin, w);
 
