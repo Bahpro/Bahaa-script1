@@ -1,8 +1,8 @@
 # Bahaa-script1
 
 This tool is for collecting the number of 
-characters. It can be used if you have a text and 
-want to know how many characters it contains. 
+characters and words. It can be used if you have a text and 
+want to know how many characters or words it contains. 
 This tool will make it easier for you. 
 
 #Installing:
