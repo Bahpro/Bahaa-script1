@@ -138,7 +138,13 @@ int Arbc()
     return 0;
 
 }
-
+void dec()
+{
+    char a;
+    cout<<"Pleas Enter Your Letter : "<<endl;
+    cin>>a;
+    cout<<"The decimal number of "<<a<<" is : "<<(int)a<<endl;
+}
 int main()
 {
     for (int y = 0; y <10;y++){
@@ -155,6 +161,7 @@ int main()
     cout<<"\nEnter L:Letter if you want to count letters \n"<<endl;
     cout<<"Enter W:Word if you want to count the number of words \n"<<endl;
     cout<<"Enter C:Calculator to use the calculator\n"<<endl;
+    cout<<"Enter D:Decimal To show a decimal number for characters"<<endl;
     getline(cin, w);
 
 if (w == "L" || w == "Letter" || w == "Letters" || w == "letter" || w == "l" || w == "letters")
@@ -183,6 +190,10 @@ else if (w == "W" || w == "w" || w == "Word" || w == "word" || w == "Words" || w
 else if (w == "C" || w == "calculator" || w == "c" || w == "Calculator")
 {
     cal();
+}
+else if ( w == "D" || w == "Decimal" || w == "decimal" || w == "d")
+{
+    dec();
 }
 else
 {
