@@ -36,6 +36,15 @@ class Cul{
         return nb1*nb2;
     }
 };
+
+int ko(int n)
+{
+if (n==1)
+return 1;
+else
+return n*ko(n-1);
+}
+
 int cal()
 {
     string b;
@@ -68,6 +77,15 @@ int cal()
     Cul ob1;
    cout<<"Your number is: "<<ob1.mod()<<endl;
 }
+
+else if(b == "!" || b == "Factorial" || b == "factorial")
+{
+int n;
+cout<<"Enter Your Number : "<<endl;
+cin>>n;
+cout<<"Your Number Is : "<<ko(n)<<endl;
+}
+
 else
 {
     cout<<"YOU DID NOT CHOOSE ANY TYPE"<<endl;
