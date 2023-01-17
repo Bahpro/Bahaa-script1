@@ -53,6 +53,7 @@ int cal()
     cout<<"Enter * or Multiply for the multipy two numbers\n";
     cout<<"Enter / or Divide two numbers\n";
     cout<<"Enter % "<<"or Modluse for the modluse two numbers\n";
+cout<<"Enter !:Factorial for show factorial to numbers"<<endl;
     cin>>b;
     if (b == "+" || b== "Sum" || b=="sum"){
     Cul ob1;
