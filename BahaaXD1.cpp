@@ -37,6 +37,21 @@ class Cul{
     }
 };
 
+void nass()
+{
+int i;
+string s;
+cout<<"Enter Your Text : "<<endl;
+getline (cin , s);
+cout<<"Enter the number of repetitions : \n";
+cin>>i;
+for(int a=1 ; a<=i ; a++)
+{
+cout<<a<<": "<<s<<endl;
+}
+
+}
+
 int ko(int n)
 {
 if (n==1)
@@ -181,7 +196,8 @@ int main()
     cout<<"Enter W:Word if you want to count the number of words \n"<<endl;
     cout<<"Enter C:Calculator to use the calculator\n"<<endl;
     cout<<"Enter D:Decimal To show a decimal number for characters"<<endl;
-    getline(cin, w);
+cout<<endl<<"Enter R:Repetition to repeat the text "<<endl;
+getline(cin, w);
 
 if (w == "L" || w == "Letter" || w == "Letters" || w == "letter" || w == "l" || w == "letters")
 {
@@ -213,6 +229,10 @@ else if (w == "C" || w == "calculator" || w == "c" || w == "Calculator")
 else if ( w == "D" || w == "Decimal" || w == "decimal" || w == "d")
 {
     dec();
+}
+else if ( w == "R" || w == "Repetition" || w == "r" || w == "repetition")
+{
+nass();
 }
 else
 {
