@@ -12,7 +12,7 @@ apt update
 
 apt upgrade
 
-apt install clang
+apt install c-script
 
 apt install git
 
@@ -20,6 +20,4 @@ git clone https://github.com/Bahpro/Bahaa-script1.git
 
 cd Bahaa-script1
 
-clang++ BahaaXD1.cpp -o Bahaa
-
-./Bahaa
+c BahaaXD1.cpp
