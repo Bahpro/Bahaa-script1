@@ -37,49 +37,31 @@ class Cul{
     }
 };
 
-class Average2
+int veer()
 {
-    private:
-        int num1;
-        int num2;
-    public:
-        Average2()
-        {
-            cout<<"Enter The Number 1 :"<<endl;
-            cin>>num1;
-            cout<<"Enter The Number 2 :"<<endl;
-            cin>>num2;
-            int b = (num1 + num2)/2;
-            cout<<"The Avrage is : "<<b<<endl;
-        }
-};
-class Average3
+
+int length;
+cout<<"how many score?\n";
+cin>>length;
+
+int result=0;
+
+int scor[length];
+int a=1;
+for (int i=0;i<length;i++)
 {
-    private:
-        int num1;
-        int num2;
-        int num3;
-    public:
-        Average3()
-        {
-            cout<<"Enter The Number 1 :"<<endl;
-            cin>>num1;
-            cout<<"Enter The Number 2 :"<<endl;
-            cin>>num2;
-            cout<<"Enter The Number 3 :"<<endl;
-            cin>>num3;
-            int b = (num1 + num2 + num3)/3;
-            cout<<"The Avrage is : "<<b<<endl;
-        }
-};
-void Ave2()
-{
-    Average2 ob1;
+
+cout<<"Enter number "<<a<<" : ";
+cin>>scor[i];
+result += scor[i];
+a++;
 }
-void Ave3()
-{
-    Average3 ob1;
+
+cout<<"Your Average is: "<<result / (float)length<<endl;
+
+return 0;
 }
+
 void nass()
 {
 int i;
@@ -112,8 +94,7 @@ int cal()
     cout<<"Enter / or Divide two numbers\n";
     cout<<"Enter % "<<"or Modluse for the modluse two numbers\n";
 cout<<"Enter !:Factorial for show factorial to numbers"<<endl;
-cout<<"Enter A2:Average of 2 numbers"<<endl;
-cout<<"Enter A3:Average of 3 numbers"<<endl;
+cout<<"Enter A:Average of numbers"<<endl;
     cin>>b;
     if (b == "+" || b== "Sum" || b=="sum"){
     Cul ob1;
@@ -146,13 +127,9 @@ cout<<"Enter Your Number : "<<endl;
 cin>>n;
 cout<<"Your Number Is : "<<ko(n)<<endl;
 }
-else if(b== "A2" || b == "a2" || b == "average2" || b == "Average2")
+else if(b== "A" || b == "a" || b == "average" || b == "Average")
 {
-    Ave2();
-}
-else if(b== "A3" || b == "a3" || b == "average3" || b == "Average3")
-{
-    Ave3();
+    veer();
 }
 
 else
