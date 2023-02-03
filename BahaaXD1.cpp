@@ -210,6 +210,42 @@ void dec()
     cout<<"The decimal number of "<<a<<" is : "<<(int)a<<endl;
 }
 
+void tashfir()
+{
+    string p;
+    cout<<"Enter E:Encryption to encrypt the text"<<endl;
+    cout<<"Enter D:Decryption to decrypt the text"<<endl;
+    getline(cin,p);
+
+    if (p == "E" || p == "Encryption" || p == "e" || p == "encryption")
+    {
+    cout<<"Enter your Text : \n";
+    string a;
+    getline(cin,a);
+    cout<<"Your text is : \n";
+    for (int i=0 ;a[i] != '\0'; i++ )
+    {
+        cout<<a[i]<<"#%$#^#%#&";
+    }
+    cout<<endl;
+    }
+    else if (p == "D" || p == "d" ||p == "Decryption" ||p == "decryption" )
+    {
+        cout<<"Enter your Text : \n";
+    string b ;
+    getline(cin,b);
+    cout<<"Your text is : \n";
+    for (int i=0 ;b[i] != '\0'; i++ )
+    {
+        if (b[i] != '#' &&b[i] !='%'&&b[i] !='$' &&b[i] != '#' &&b[i] != '^' &&b[i] != '%' &&b[i] != '&')
+        cout<<b[i];
+    }
+    cout<<endl;
+    }
+    else
+    cout<<"You did not choose any type!!!"<<endl;
+}
+
 int main()
 {
     for (int y = 0; y <10;y++){
@@ -228,6 +264,7 @@ int main()
     cout<<"Enter C:Calculator to use the calculator\n"<<endl;
     cout<<"Enter D:Decimal To show a decimal number for characters"<<endl;
 cout<<endl<<"Enter R:Repetition to repeat the text "<<endl;
+cout<<"\nEnter E:Encryption to encrypt the text"<<endl;
 getline(cin, w);
 
 if (w == "L" || w == "Letter" || w == "Letters" || w == "letter" || w == "l" || w == "letters")
@@ -265,6 +302,11 @@ else if ( w == "R" || w == "Repetition" || w == "r" || w == "repetition")
 {
 nass();
 }
+else if (w == "e" || w == "E" || w == "Encryption" || w == "encryption")
+{
+tashfir();
+}
+
 else
 {
     cout<<"YOU DID NOT CHOOSE THE TYPE \n"<<endl;
